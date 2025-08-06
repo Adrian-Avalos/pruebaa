@@ -1,9 +1,8 @@
 const CACHE_NAME = "mi-pwa-cache-v1";
 const URLS_TO_CACHE = [
-    "/pruebaa/",
-    "/pruebaa/index.html",
-    "/pruebaa/manifest.json",
-    "/pruebaa/icon.png"
+    "index.html",
+    "manifest.json",
+    "icon.png"
 ];
 
 self.addEventListener("install", event => {
@@ -22,5 +21,6 @@ self.addEventListener("fetch", event => {
         })
     );
 });
+
 
 
