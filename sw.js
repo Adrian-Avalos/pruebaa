@@ -1,12 +1,11 @@
 const CACHE_NAME = "mi-pwa-cache-v1";
 const URLS_TO_CACHE = [
-    "/Eir3/",
-    "/Eir3/index.html",
-    "/Eir3/manifest.json",
-    "/Eir3/icon.png"
+    "/pruebaa/",
+    "/pruebaa/index.html",
+    "/pruebaa/manifest.json",
+    "/pruebaa/icon.png"
 ];
 
-// Al instalar el Service Worker
 self.addEventListener("install", event => {
     event.waitUntil(
         caches.open(CACHE_NAME).then(cache => {
@@ -16,7 +15,6 @@ self.addEventListener("install", event => {
     );
 });
 
-// Interceptar las solicitudes y responder desde cache si está disponible
 self.addEventListener("fetch", event => {
     event.respondWith(
         caches.match(event.request).then(response => {
@@ -24,3 +22,5 @@ self.addEventListener("fetch", event => {
         })
     );
 });
+
+
