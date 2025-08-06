@@ -1,8 +1,8 @@
 {
   "name": "Mi App PWA",
   "short_name": "PWA Simple",
-  "start_url": "/Eir3/index.html",
-  "scope": "/Eir3/index.html",
+  "start_url": "/pruebaa/index.html",
+  "scope": "/pruebaa/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#317EFB",
@@ -19,3 +19,4 @@
     }
   ]
 }
+
