@@ -7,11 +7,7 @@
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="icon.png" type="image/png">
     <meta name="theme-color" content="#317EFB"/>
-</head>
-<body>
-    <h1>Hola, esta es una PWA!</h1>
-    <p>Puedes instalar esta app desde el navegador si accedes desde <code>https://adrian-avalos.github.io/pruebaa/</code>.</p>
-
+    
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js')
@@ -19,6 +15,11 @@
                 .catch(err => console.error('❌ Error al registrar el Service Worker:', err));
         }
     </script>
+</head>
+<body>
+    <h1>Hola, esta es una PWA!</h1>
+    <p>Puedes instalar esta app desde el navegador si accedes desde <code>https://adrian-avalos.github.io/pruebaa/</code>.</p>
 </body>
 </html>
+
 
