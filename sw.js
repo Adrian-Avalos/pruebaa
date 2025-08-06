@@ -1,8 +1,7 @@
-const CACHE_NAME = "mi-pwa-cache-v1";
-const URLS_TO_CACHE = [
-    "index.html",
-    "manifest.json",
-    "icon.png"
+const CACHE_NAME = "nutricion-cache-v2";
+const urlsToCache = [
+  // html
+  "index.html",
 ];
 
 // Instala y guarda en caché
@@ -33,6 +32,7 @@ self.addEventListener("fetch", event => {
       })
   );
 });
+
 
 
 
